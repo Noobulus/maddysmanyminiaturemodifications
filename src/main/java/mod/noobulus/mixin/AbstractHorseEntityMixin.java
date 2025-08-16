@@ -4,6 +4,7 @@ import com.llamalad7.mixinextras.sugar.Local;
 import com.llamalad7.mixinextras.sugar.ref.LocalBooleanRef;
 import com.llamalad7.mixinextras.sugar.ref.LocalFloatRef;
 import com.llamalad7.mixinextras.sugar.ref.LocalIntRef;
+import mod.noobulus.util.MaddysManyMiniatureModificationsTags;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.passive.AbstractHorseEntity;
@@ -30,6 +31,11 @@ public class AbstractHorseEntityMixin {
             f.set(nutrition); // heal by the "nutrition" value of the food, the number of visible shanks it fills for the player
             j.set((int) Math.max(Math.ceil(saturation), 3)); // increase "temper" by 3 or by the rounded saturation value of the food, whichever is greater
             i.set(nutrition * 15); // speed up baby horse growth by 15 seconds per nutrition, i.e. 1 minute for an apple
+            if (item.isIn(MaddysManyMiniatureModificationsTags.Items.HORSE_BULK_FOOD)) {
+                i.set(i.get() * 10);
+                f.set(f.get() * 10);
+                j.set(j.get() * 3); // multiply effects for "bulk" foods like hay bales
+            }
             if (item.isIn(ItemTags.HORSE_TEMPT_ITEMS) && !horse.getWorld().isClient && horse.isTame() && horse.getBreedingAge() == 0 && !horse.isInLove()) { // copy check from original method for breeding items
                 i.set(i.get() * 4); // quadruple growth bonus for tempting foods to somewhat mimic vanilla behavior for golden tempt foods
                 bl.set(true);
