@@ -5,6 +5,7 @@
   "mixins": [
     "AbstractHorseEntityMixin",
     "AnimalEntityInvoker",
+    "LlamaEntityMixin",
     "RabbitEntityMixin"
   ],
   "injectors": {
