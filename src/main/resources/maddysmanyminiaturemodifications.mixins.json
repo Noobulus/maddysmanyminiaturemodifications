@@ -3,7 +3,9 @@
   "package": "mod.noobulus.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "AbstractHorseEntityMixin"
+    "AbstractHorseEntityMixin",
+    "AnimalEntityInvoker",
+    "RabbitEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
