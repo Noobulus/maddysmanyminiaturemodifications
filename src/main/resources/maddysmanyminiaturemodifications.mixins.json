@@ -5,9 +5,17 @@
   "mixins": [
     "AbstractHorseEntityMixin",
     "AnimalEntityInvoker",
+    "BowItemMixin",
+    "BrushItemMixin",
+    "CrossbowItemMixin",
+    "FishingRodItemMixin",
+    "FlintAndSteelItemMixin",
     "ItemMixin",
     "LlamaEntityMixin",
-    "RabbitEntityMixin"
+    "OnAStickItemMixin",
+    "RabbitEntityMixin",
+    "ShearsItemMixin",
+    "TridentItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
