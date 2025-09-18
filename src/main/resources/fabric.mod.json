@@ -5,7 +5,7 @@
 	"name": "MaddysManyMiniatureModifications",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Noobulus"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"mod.noobulus.MaddysManyMiniatureModificationsClient"
+		],
+		"emi": [
+			"mod.noobulus.emi.MaddysManyMiniatureModificationsEmiPlugin"
 		]
 	},
 	"mixins": [

@@ -14,6 +14,7 @@ public abstract class ItemMixin {
 
     @Shadow public abstract boolean canRepair(ItemStack stack, ItemStack ingredient);
 
+    // shitty fallback method
     @Inject(method = "canRepair(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;)Z", at = @At("RETURN"), cancellable = true)
     private void diamondRepairsIfNetheriteDoes(ItemStack stack, ItemStack ingredient, CallbackInfoReturnable<Boolean> cir) {
         if (ingredient.isOf(Items.DIAMOND) && !cir.getReturnValue() && canRepair(stack, Items.NETHERITE_INGOT.getDefaultStack())) {

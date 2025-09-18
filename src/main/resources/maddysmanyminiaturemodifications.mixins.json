@@ -5,6 +5,7 @@
   "mixins": [
     "AbstractHorseEntityMixin",
     "AnimalEntityInvoker",
+    "ArmorMaterialMixin",
     "BowItemMixin",
     "BrushItemMixin",
     "CrossbowItemMixin",
@@ -15,6 +16,7 @@
     "OnAStickItemMixin",
     "RabbitEntityMixin",
     "ShearsItemMixin",
+    "ToolMaterialsMixin",
     "TridentItemMixin"
   ],
   "injectors": {
