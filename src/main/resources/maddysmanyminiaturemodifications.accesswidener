@@ -2,3 +2,5 @@ accessWidener v2 named
 accessible class net/minecraft/entity/passive/RabbitEntity$FleeGoal
 accessible field net/minecraft/entity/mob/MobEntity goalSelector Lnet/minecraft/entity/ai/goal/GoalSelector;
 accessible field net/minecraft/item/OnAStickItem target Lnet/minecraft/entity/EntityType;
+extendable method net/minecraft/item/Item getRecipeRemainder ()Lnet/minecraft/item/Item;
+accessible field net/minecraft/item/BucketItem fluid Lnet/minecraft/fluid/Fluid;

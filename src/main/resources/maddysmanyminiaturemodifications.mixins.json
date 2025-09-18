@@ -8,6 +8,7 @@
     "ArmorMaterialMixin",
     "BowItemMixin",
     "BrushItemMixin",
+    "BucketItemMixin",
     "CrossbowItemMixin",
     "FishingRodItemMixin",
     "FlintAndSteelItemMixin",
